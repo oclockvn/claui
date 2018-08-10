@@ -3,4 +3,41 @@ html, body {
   font-size: 14px;
   color: #555555; }
 
+a {
+  color: #555555;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+.s-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .s-list .s-list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 4px 16px;
+    text-transform: uppercase;
+    position: relative; }
+    .s-list .s-list-item .s-list-item {
+      padding: 0; }
+    .s-list .s-list-item:before {
+      content: '';
+      border-left: 1px solid rgba(85, 85, 85, 0.3);
+      left: 0;
+      position: absolute;
+      top: 8px;
+      bottom: 8px; }
+    .s-list .s-list-item:first-child:before {
+      display: none; }
+  .s-list > li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .s-list.s-list--slash .s-list-item:before {
+    -webkit-transform: skew(-15deg);
+            transform: skew(-15deg);
+    border-left: 1px solid rgba(85, 85, 85, 0.6); }
+
 /*# sourceMappingURL=app.css.map */

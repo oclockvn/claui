@@ -3,3 +3,12 @@ html, body {
     font-size: 14px;
     color: $tc-primary;
 }
+
+a {
+    color: $tc-primary;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

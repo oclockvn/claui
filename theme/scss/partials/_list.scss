@@ -1,0 +1,42 @@
+.s-list {
+    display: flex;
+
+    .s-list-item {        
+        display: flex;
+        padding: $unit/2 $unit*2;       
+        text-transform: uppercase;
+        position: relative;
+
+        .s-list-item {
+            padding: 0;
+        }
+
+        &:before {
+            content: '';   
+            border-left: 1px solid rgba($tc-primary, .3);
+            left: 0;
+            position: absolute;
+            top: $unit;
+            bottom: $unit;
+        }
+
+        &:first-child {
+            &:before {
+                display: none;
+            }
+        }
+    }
+
+    > li {
+        display: flex;
+    }  
+    
+    &.s-list--slash {
+        .s-list-item {
+            &:before {   
+                transform: skew(-15deg);           
+                border-left: 1px solid rgba($tc-primary, 0.6);
+            }
+        }
+    }
+}
