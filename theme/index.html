@@ -7,16 +7,64 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="scss/app.css">
 
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <header class="header">
+
+      <div class="header--top">
+        <div class="container">
+          
+          <div class="mini-left">
+            <div class="policy s-list">
+              <a href="#" class="s-list-item">return policy</a>
+              <a href="#" class="s-list-item">follow us</a>
+            </div>
+            <div class="socials">
+              <a href="#" class="social social--fb"><i class="fas fa-facebook"></i></a>
+              <a href="#" class="social social--tw"><i class="fas fa-twitter"></i></a>
+              <a href="#" class="social social--li"><i class="fas fa-linkedin"></i></a>
+              <a href="#" class="social social--pi"><i class="fas fa-pinterest"></i></a>
+              <a href="#" class="social social--em"><i class="fas fa-email"></i></a>
+            </div>
+          </div>
+          <!-- /mini-left -->
+
+          <div class="mini-right">
+            <div class="s-list">
+              <ul>
+                <li class="has-child"><a href="#" class="s-list-item">$ currentcy</a></li>
+                <li class="has-child"><a href="#" class="s-list-item">language</a></li>
+                <li class="has-child s-list s-list--slash">
+                  <a href="#" class="s-list-item">register</a>
+                  <a href="#" class="s-list-item">login</a>
+                </li>
+                <li class="has-child"><a href="#" class="s-list-item">track your order</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- /mini-right -->
+          
+        </div>
+      </div>
+
+      <div class="header--main">
+        <div class="container"></div>
+      </div>
+    </header>
+
+    <div class="main" id="main"></div>
+
+    <footer class="footer"></footer>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

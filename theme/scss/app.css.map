@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAW;EACP,gBAAgB,ECCP,OAAmB;EDA5B,SAAS,EAAE,IAAI;EACf,KAAK,ECAI,OAAO",
+"sources": ["partials/_layout.scss","settings/_color.scss"],
+"names": [],
+"file": "app.css"
+}
